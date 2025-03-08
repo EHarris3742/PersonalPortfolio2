@@ -1,0 +1,339 @@
+@import url("https://fonts.googleapis.com/css2?family=Trade+Winds&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+/* NAV BAR */
+
+nav {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffff;
+  height: 100px;
+  width: 100%;
+  padding: 0px 20px;
+  position: relative;
+}
+
+nav .left h1 {
+  font-family: "Trade Winds", serif;
+}
+
+nav .middle {
+  display: flex;
+}
+
+nav .right a {
+  font-family: "Trade Winds", serif;
+  margin: 0 5px;
+}
+
+#nav-links {
+  font-size: 25px;
+}
+
+#nav-links a:hover {
+  color: aqua;
+  font-size: 35px;
+  transition: 0.5s;
+}
+
+#nav-logo {
+  filter: drop-shadow(3px 3px);
+  float: none;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* MAIN BODY */
+
+@media (max-width: 1100px) {
+  section.body-details {
+    flex-direction: column-reverse;
+  }
+  section.body-details #body-pic0 {
+    width: 400px;
+  }
+}
+
+@media (max-width: 850px) {
+  .body-details .body-text {
+    font-size: 15px;
+  }
+}
+
+section.body-details {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+
+.body-details .body-text {
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+}
+
+.body-details .body-image {
+  display: flex;
+  justify-content: right;
+}
+
+.body-details .body-image img {
+  width: 350px;
+  border-radius: 50%;
+  filter: drop-shadow(0px 0px);
+}
+
+#body-logos {
+  display: inline-flex;
+  margin-top: 20px;
+  transition: 2s;
+}
+
+#body-logos img:hover {
+  width: 5rem;
+  height: 5rem;
+}
+
+#body-logos .media-links {
+  aspect-ratio: 1/0.7;
+}
+
+#body-logos .x-logo {
+  height: 60px;
+  width: 60px;
+  transition: 1s;
+}
+
+section.lower-body {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+}
+
+.lower-body .lorem-quote {
+  padding: 5rem;
+  border-top: 1px solid black;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  width: 85rem;
+  font-size: 3rem;
+  font-style: italic;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 700;
+}
+
+img {
+  width: 90px;
+  filter: drop-shadow(8px 8px);
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+/* ABOUT ME SECTION */
+
+section.about-body-details {
+  display: flex;
+
+  font-family: "Courier New", Courier, monospace;
+
+  padding: 0 20px;
+  margin: 50px 0 0 0px;
+  flex-wrap: wrap;
+}
+
+section.about-body-details0 {
+  display: flex;
+
+  font-family: "Courier New", Courier, monospace;
+
+  padding: 0 0px;
+  margin: 30px 0px -20px;
+  flex-wrap: wrap;
+}
+
+.about-body-details01 {
+  display: flex;
+
+  font-family: "Courier New", Courier, monospace;
+
+  padding: 0 0px;
+  margin-top: -15rem;
+}
+
+#about-h1 {
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
+}
+
+#about-h2 {
+  text-align: left;
+  padding-top: 3rem;
+}
+#about-h22 {
+  text-align: left;
+  padding-top: 3rem;
+  border-top: 1px solid black;
+}
+
+.about-info0 {
+  font-size: 20px;
+  text-align: left;
+}
+.about-info01 {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid black;
+}
+.about-info02 {
+  font-size: 20px;
+  text-align: left;
+  padding-bottom: 10rem;
+  border-bottom: 1px solid black;
+}
+
+.about-info0 p {
+  padding-top: 20px;
+  width: 65rem;
+}
+.about-info01 p {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+  margin-left: 30rem;
+  width: 62rem;
+}
+.about-info02 p {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 40px;
+
+  width: 70rem;
+}
+
+.about-body-details .about-img01 {
+  display: flex;
+  margin-right: 90rem;
+  position: relative;
+  top: -380px;
+}
+
+#about-img0 {
+  display: flex;
+  margin-left: 70rem;
+  margin-top: -18rem;
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+#about-img01 {
+  display: flex;
+  margin-right: 70rem;
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+}
+
+#about-img02 {
+  display: flex;
+
+  width: 20rem;
+  height: 20rem;
+  border-radius: 50%;
+  bottom: 40px;
+}
+
+/*PORTFOLIO PAGE */
+
+.portfolio-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  flex-wrap: wrap;
+}
+.portfolio-content0 p {
+  font-size: 20px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid black;
+}
+.portfolio-content0 h2 {
+  font-size: 30px;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 30px;
+}
+
+#port-h2 {
+  text-align: center;
+  padding-top: 3rem;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 45px;
+}
+
+#port-img0 {
+  width: 300px;
+  height: 300px;
+  padding-bottom: 30px;
+}
+#port-img1 {
+  width: 300px;
+  height: 300px;
+
+  padding-top: 50px;
+}
+
+/* CONTACT PAGE */
+
+.form-box {
+  text-align: center;
+  justify-content: center;
+  font-family: "Courier New", Courier, monospace;
+  padding-top: 30px;
+  width: auto;
+}
+
+#contact-h1 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  font-size: 50px;
+  text-decoration: underline;
+  margin-bottom: 30px;
+  padding-top: 20px;
+}
+
+form {
+}
